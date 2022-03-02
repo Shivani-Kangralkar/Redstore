@@ -1,0 +1,355 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+nav {
+  text-align: right;
+  flex: 1;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 22px;
+}
+nav ul li {
+  margin-right: 32px;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+p {
+  color: #555;
+  
+  line-height: 14px;
+  font-size: 14px;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2 {
+  /* flex-basis: 40%; */
+  flex-basis: 19%;
+  min-width: 249px;
+  /* min-width: 300px; */
+}
+.col-2 img {
+  max-width: 275%;
+  padding: 50px 0;
+}
+.col-2 h1 {
+  font-size: 33px;
+  line-height: 30px;
+  margin: 10px 0;
+ 
+}
+.btn {
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  padding: 8px 20px;
+  margin: 70px 0;
+  border-radius: 20px;
+  font-size: 20px;
+  /* transition: background 0.2s; */
+}
+
+.btn:hover {
+  background: #563434;
+}
+.header {
+  background: radial-gradient(#fff, #ffd6d6);
+}
+.header .row {
+  margin-top: 15px;
+}
+
+/* Category feature */
+
+.categories {
+  margin: 20px 0px;
+}
+.col3 {
+  flex-basis: 33%;
+  min-width: 200px;
+  margin-bottom: 30px;
+  /* border: 2px solid black; */
+}
+.col3 img {
+  width: 90%;
+}
+.small-container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 80px;
+  padding-right: 60px;
+}
+
+.col4 {
+  flex-basis: 20%;
+  min-width: 180px;
+  margin-bottom: 30px;
+  /* border: 2px solid black; */
+  padding: 0.6px;
+  transition: transform 0.1s;
+}
+.col4 img {
+  width: 80%;
+}
+.title {
+  text-align: center;
+  margin: 0 auto 20px;
+  position: relative;
+  /* border:2px solid black; */
+  line-height: 60px;
+  color: #555;
+}
+
+.title::after {
+  content: "";
+  background: #ff523b;
+  /* width of line */
+  width: 80px;
+  /* height of line */
+  height: 5px;
+  border-radius: 5px;
+  /* line will get stuck on parent */
+  position: absolute;
+  /* line will come down */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+h4 {
+  color: #555;
+  font-weight: normal;
+  font-size: 10px;
+}
+.col4 p {
+  font-size: 10px;
+}
+.rating .fa {
+  color: #ff523b;
+  font-size: 12px;
+}
+.col4:hover {
+  transform: translateY(-8px);
+}
+.offer {
+  background: radial-gradient(#fff, #ffd6d6);
+  margin-top: 30px;
+  /* border: 2px solid black; */
+  padding: 10px 0;
+}
+.col-2 .offer-img {
+  padding: 50px;
+}
+small {
+  color: #555;
+  font-size: 10px;
+  line-height: 1px;
+}
+
+/* ----------testimonial-------- */
+.testimonial {
+  padding-top: 60px;
+}
+.testimonial .col3 {
+  text-align: center;
+  padding: 25px 10px;
+  box-shadow: 0px 0px 20px 0px rgb(0, 0, 0, 10%);
+  cursor: pointer;
+  transition: transform 0.5s;
+  /* border:2px solid black; */
+}
+.testimonial .col3 img {
+  width: 20%;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+.testimonial .col3:hover {
+  transform: translateY(-10px);
+}
+.hen {
+  font-size: 10px;
+}
+.fa.fa-quote-left {
+  font-size: 18px;
+  color: #ff523b;
+}
+.col3 p {
+  font-size: 8px;
+  color: #777;
+  margin: -1px 0;
+}
+.testimonial .col3 h3 {
+  font-size: 10px;
+  color: #555;
+}
+/* ---------brands---------- */
+.brands {
+  width: 100px auto;
+}
+
+.col5 {
+  width: 136px;
+  margin-top: 35px;
+}
+
+.col5 img {
+  width: 65%;
+  cursor: pointer;
+  /* To change color of img to grey (cococola,paypal) */
+  filter: grayscale(100%);
+}
+.col5 img:hover {
+  /* When we click at (cococola,paypal)its image become colored */
+  filter: grayscale(0);
+}
+/* ---footer---- */
+.footer {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 8px;
+  padding: 30px 20px;
+}
+.footer p {
+  color: #8a8a8a;
+}
+.footer h3 {
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 10px;
+}
+.footer-col1,
+.footer-col2,
+.footer-col3,
+.footer-col4 {
+  min-width: 163px;
+  margin-bottom: 20px;
+}
+.footer-col1 {
+  flex-basis: 30%;
+}
+.footer-col2 {
+  flex: 1;
+  text-align: center;
+}
+.footer-col2 img {
+  width: 150px;
+  margin-bottom: 15px;
+}
+.footer-col3,
+.footer-col4 {
+  /* flex-basis: 12px; */
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+.app-logo {
+  margin-top: 10px;
+}
+.app-logo img {
+  width: 80px;
+}
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 10px 0px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.menu-icon {
+  width: 15px;
+  margin-left: 20px;
+  display: none;
+}
+/* -----------All Product-----------*/
+.row-2 {
+  justify-content: space-between;
+  margin: 70px auto 50px;
+}
+
+.small-container h2 {
+  font-size: 15px;
+}
+
+select option {
+  font-size: 8px;
+}
+
+select {
+  border: 1px solid #ff523b;
+  padding: 1px;
+}
+
+/* black color border remains the same when you still remove cursor .So u add below line to keep red color still*/
+select:focus {
+  outline: none;
+}
+
+/* -------media query----------- */
+@media only screen and (max-width: 616px) {
+  nav ul {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    /* when I click on 3button the menu appear (Until than it is blank) */
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 30px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 10px;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* --------media------- */
+@media only screen and (max-width: 400px) {
+  .row {
+    text-align: center;
+  }
+  .col-2,
+  .col3,
+  .col4 {
+    flex-basis: 100%;
+  }
+}
